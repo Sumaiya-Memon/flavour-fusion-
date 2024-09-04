@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Recipe Website</title>
+</head>
+<body>
+    <div class="filter">
+        <label for="area">Filter by Area:</label>
+        <select id="area" onchange="filterRecipes()">
+            <option value="all">All</option>
+            <option value="italian">Italian</option>
+            <option value="mexican">Mexican</option>
+            <!-- Add more options as needed -->
+        </select>
+    </div>
+    <div class="recipes" id="recipes">
+        <!-- Recipe cards will be dynamically added here -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
